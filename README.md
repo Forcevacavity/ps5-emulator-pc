@@ -45,6 +45,48 @@ Designed to tap into the raw performance of modern desktop hardware, this projec
 
 
 
+
+### 🎮 Verified Tested Titles
+
+The emulator's compatibility layer has been tested against a selection of current-generation PlayStation 5 titles. These tests help validate the Zen 2 / RDNA 2 translation pipeline and the Vulkan 1.3 rendering backend under real-world workloads.
+
+| Title | Genre | Test Focus |
+|---|---|---|
+| **Marvel's Wolverine** | Action-Adventure | Rendering stability, combat frame pacing |
+| **Demon's Souls** | Action RPG | High-fidelity asset streaming, 60 FPS target |
+| **Astro Bot** | 3D Platformer | DualSense input mapping, physics timing |
+| **Spider-Man 2** | Action-Adventure | Open-world traversal, memory management |
+| **Returnal** | Roguelike Shooter | Particle-heavy scenes, fast reload cycles |
+
+> 📝 **Note:** "Tested" means the title was used for internal pipeline validation. It does not guarantee full playability from start to finish on every hardware configuration.
+
+### 🏆 Popular PS5-Exclusive Titles in the Compatibility Tracker
+
+The following titles are currently tracked for compatibility research. These are games that remain **console-exclusive** at the time of writing, making them primary targets for PC emulation interest:
+
+- **Marvel's Wolverine** — Insomniac Games' superhero epic, PS5 exclusive at launch
+- **Demon's Souls** — Bluepoint's visually stunning remake, still PS5-only
+- **Astro Bot** — The DualSense showcase platformer, a pure PS5 exclusive
+- **Saros** — Housemarque's sci-fi roguelite, PS5 console exclusive
+- **Spider-Man 2** — Insomniac's symbiote saga, PS5 console exclusive
+
+
+### 🚗 GTA 6: Planned Compatibility Research (Post-Launch)
+
+**Grand Theft Auto VI** is scheduled to launch on **November 19, 2026** for PlayStation 5 and Xbox Series X/S. Rockstar Games has **not** announced an official PC release date, though industry reports suggest a PC version may arrive in **early 2027**.
+
+Once the PS5 version is publicly available, this project's roadmap includes:
+
+| Phase | Research Goal | Status |
+|---|---|---|
+| 🔍 **File Access Research** | Study PS5 build encryption and firmware requirements | 🔜 Post-launch |
+| 🧩 **Compatibility Layer Testing** | Evaluate whether existing translation pipelines can handle GTA 6's open-world streaming | 🔜 Post-launch |
+| ⚡ **Vulkan 1.3 Performance Profiling** | Analyze draw-call load, ray-tracing usage, and memory bandwidth demands | 🔜 Post-launch |
+| 🖼️ **Resolution Scaling Tests** | Assess 4K / 8K feasibility on high-end GPUs | 🔜 Post-launch |
+
+
+
+
 ## 🏗️ Core Architecture & Technical Overview
 
 Emulating current-generation hardware such as the PlayStation 5 requires robust API integration and resource optimization. The project leverages **Vulkan 1.3** as its primary rendering backend to ensure low-overhead GPU control, precise memory management, and high-framerate stability.
